@@ -8,10 +8,10 @@ function SalesCard() {
             <h2 className="dsmeta-sales-title">Vendas</h2>
             <div>
                 <div className="dsmeta-form-control-container">
-                    <Input />
+                    <Input dateType={true}/>
                 </div>
                 <div className="dsmeta-form-control-container">
-                    <Input />
+                    <Input dateType={false}/>
                 </div>
             </div>
 
