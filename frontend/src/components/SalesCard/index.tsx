@@ -1,8 +1,18 @@
+import axios from 'axios';
+import { useEffect } from 'react';
 import Input from '../Input';
 import NotificationButton from '../NotificationButton';
 import './styles.css';
 
 function SalesCard() {
+
+    useEffect(() => {
+        axios.get("http://localhost:8080/sales")
+        .then(response => {
+            console.log(response.data);
+        })
+    }, []);
+
     return (
         <div className="dsmeta-card">
             <h2 className="dsmeta-sales-title">Vendas</h2>
